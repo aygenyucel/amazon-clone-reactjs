@@ -4,7 +4,6 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1500px;
-    
 }
 
 .home__row {
@@ -16,7 +15,7 @@
 
 .home__image {
     width: 100%;
-    z-index: -1; /*behind anthing else*/
+    z-index: -1; 
     margin-bottom: -250px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
