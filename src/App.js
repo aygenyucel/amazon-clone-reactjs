@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Home from './Home';
 import Checkout from './Checkout';
+import Login from './Login';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 {/* Routes was "Switch" past (react-router-dom v6)*/}
 
@@ -10,19 +11,22 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   
   return (
-    // BEM
-    //
+
     <Router>
       <div className="app">
-        <Header />
+        
         <Routes>
           <Route 
-            path='/checkout' 
-            element={<Checkout />} 
+            path="/" 
+            element={<><Header/><Home/></>} 
           />
           <Route 
-            path="/" 
-            element={<Home/>} 
+            path='/checkout' 
+            element={<><Header/><Checkout /></>} 
+          />
+          <Route
+            path='/login'
+            element= {<Login/>}
           />
         </Routes>
       </div>
