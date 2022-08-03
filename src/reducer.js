@@ -51,7 +51,7 @@ const reducer = (state, action) => {
                 cart: newCart
             }
 
-        case "SET_USER":
+        case 'SET_USER':
             return {
                 ...state,
                 user: action.user

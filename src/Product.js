@@ -11,7 +11,6 @@ function Product({id, title, image, price, rating }) {
   //state: basically state of the global store
   //dispatch: how me manupulate the data
 
-  console.log('this is the basket: ', cart)
 
   const addToCart = () => {
     //dispatch the item into the data layer
