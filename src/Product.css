@@ -16,25 +16,30 @@
     z-index: 1;
 }
 
+.product__img-btn {
+    display: flex;
+    flex-direction: column;
+}
 
-.product > img {
-    max-height: 200px;
+
+.product__img-btn > img {
+    max-height: 150px;
     width: 100%;
-    object-fit: contain;
     margin-bottom: 15px;
 }
 
 .product__info {
-    height: 100px;
+    height: 150px;
     margin-bottom: 15px;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .product__price {
     margin-top: 5px;
 }
 
-.product > button {
+.product__img-btn > button {
     background-color: #febd69;
     border: 1px solid;
     margin-top: 10px;

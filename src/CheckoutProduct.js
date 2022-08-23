@@ -6,8 +6,6 @@ import { useStateValue } from './StateProvider';
 function CheckoutProduct({ id, image, title, price, rating }) {
 
     const [{cart}, dispatch] = useStateValue();
-    console.log('REMOVEDDDD ', cart);
-
 
     const removeFromCart = () => { 
         dispatch({
